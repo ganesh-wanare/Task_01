@@ -1,0 +1,19 @@
+<!-- <ul *ngFor="let user of users">
+    <img [width]="100" [height]="100" src="{{user.avatar_url}}" alt="">
+</ul> -->
+
+<div class="center" >
+    <h1> User Data </h1>
+    <table>
+        <tr>
+            <th>Id: </th>
+            <th>Username: </th>
+            <th>Image: </th>
+        </tr>
+        <tr *ngFor="let user of users" >
+            <td>{{user.id}}</td>
+            <td>{{user.login}}</td>
+            <td><img [width]="100" [height]="100" src="{{user.avatar_url}}" alt=""></td>
+        </tr>
+    </table>
+</div>
